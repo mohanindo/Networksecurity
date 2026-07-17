@@ -1,2 +1,11 @@
 venv
 .env
+
+# Python Cache
+__pycache__/
+
+# Pytest
+.pytest_cache/
+
+# MyPy
+.mypy_cache/
