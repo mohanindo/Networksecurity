@@ -30,11 +30,11 @@ import dagshub
 
 
 
-dagshub.init(repo_owner='mohanbabu5310', repo_name='networksecurity', mlflow=True)
+dagshub.init(repo_owner='mohanindo', repo_name='Networksecurity', mlflow=True)
 
-os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/mohanbabu5310/networksecurity.mlflow"
-os.environ["MLFLOW_TRACKING_USERNAME"]="mohanbabu5310"
-os.environ["MLFLOW_TRACKING_PASSWORD"]="7940d6b0fa25a8965d488fccb1618353831c91cb"
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/mohanindo/Networksecurity.mlflow"
+os.environ["MLFLOW_TRACKING_USERNAME"]="mohanindo"
+os.environ["MLFLOW_TRACKING_PASSWORD"]="Mohan1122@"
 
 
 
@@ -49,7 +49,7 @@ class ModelTrainer:
             raise NetworkSecurityException(e,sys)
         
     def track_mlflow(self,best_model,classificationmetric):
-        mlflow.set_registry_uri("https://dagshub.com/mohanbabu5310/networksecurity.mlflow")
+        mlflow.set_registry_uri("https://dagshub.com/mohanindo/Networksecurity.mlflow")
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         with mlflow.start_run():
             f1_score=classificationmetric.f1_score
